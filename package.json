@@ -1,0 +1,19 @@
+{
+  "name": "email",
+  "version": "1.0.0",
+  "description": "A email client developed with AngularJS",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranceliglesias/emailClient.git"
+  },
+  "author": "Rancel Iglesias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranceliglesias/emailClient/issues"
+  },
+  "homepage": "https://github.com/ranceliglesias/emailClient#readme"
+}

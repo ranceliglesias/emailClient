@@ -1,1 +1,2 @@
-
+## emailClient
+Developed with AngularJS 
