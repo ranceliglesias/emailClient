@@ -4,23 +4,37 @@
     <meta charset="utf-8">
     <title>Email Client</title>
     <link rel="stylesheet" href="/css/style.css">
+    <style>
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
+    <header class="header" role="banner">
+      <div class="header__text">
+        <p>Email Client by <a href="https://github.com/ranceliglesias/emailClient">Rancel</a></p>
+      </div>
+    </header>
 
     <main class="main" role="main">
-      <div class="wrapper">
-        <div ng-view></div>
-      </div>
+      <div ng-view class="flex"></div>
     </main>
 
     <!--  Libraries-->
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-sanitize.js"></script>
     <!-- Application Files -->
     <script src="js/app.js"></script>
-    <script src="js/controllers/inbox.js"></script>
+    <script src="js/controllers/InboxCtrl.js"></script>
+    <script src="js/controllers/EmailCtrl.js"></script>
     <script src="js/factories/InboxFactory.js"></script>
+    <script src="js/factories/EmailFactory.js"></script>
+    <script src="js/directives/InboxDrctv.js"></script>
+    <script src="js/directives/EmailDrctv.js"></script>
 
   </body>
 </html>
